@@ -1,3 +1,22 @@
+// Import fonts
+@font-face {
+    font-family: 'Galaxie-Copernicus';
+    src: url('../fonts/GalaxieCopernicus-Book.woff2') format('woff2'),
+        url('../fonts/GalaxieCopernicus-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Regular.woff2') format('woff2'),
+        url('../fonts/Inter-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 @import "./custom-variable.scss";
 @import "./frameworks/bootstrap/bootstrap.scss";
 @import "node_modules/bootstrap-icons/font/bootstrap-icons";
@@ -5,7 +24,7 @@
 @import "./components/header"; 
 @import "./components/helper.scss"; 
 @import "./components/footer"; 
-@import "./components/custom.scss";
+@import "./components/main.scss";
 
 body{
 
