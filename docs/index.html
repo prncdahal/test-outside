@@ -8,189 +8,327 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="icon" href="./img/favicon.png" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Mulish:wght@900&family=Open+Sans:wght@300;400;700&display=swap"
-        rel="stylesheet">
-        <title>Ramesh Dahal | Web Designer &amp; Wordpress Developer</title>
+        <title>UI Frontend Skill Test | Outside</title>
     </head>
     
-    <body class="m-3 home ">
-        <header class="p-4 header "> <span class="bg-overlay"></span>
-
-            <nav class="container d-flex justify-content-between align-items-center mb-auto"> <a href="/" class="logo">
-        <strong>RD.</strong>
+    <body class="home">
+        <!-- Top Panel -->
+        <div class="top-panel container">
+            <div class="top-panel__social_links text-end"> <a class="top-panel__social_link" href="https://www.twitter.com">
+        <em class="bi bi-twitter"></em>
+      </a>
+ <a class="top-panel__social_link" href="https://www.twitter.com">
+        <em class="bi bi-linkedin"></em>
       </a>
 
-                <ul class="nav main-nav">
-                    <li class="nav-item"><a href="#project-list" class="line-highlight" aria-current="page">My Work</a>
+            </div>
+        </div>
+        <!-- End of Top Panel-->
+        <!-- Header starts here -->
+        <header class="header  overflow-hidden">
+            <div class="container header__content__wrapper p-4 p-lg-5 pe-lg-0 bg-light">
+                <nav class="header__nav__bar navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid"> <a class="logo" href="#"><img src="./img/logo.svg" width="149"  alt="Cpmpany name"></a>
 
-                    </li>
-                    <li class="nav-item"><a href="mailto:prncdahal@gmail.com" class="line-highlight">Get in Touch</a>
+                        <button
+                        class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
 
-                    </li>
-                </ul>
-            </nav>
-            <div class="billboard  position-relative mb-auto">
-                <div class="container position-relative">
-                    <div class="decor__circle "></div>
-                    <div class="row align-items-center vh-50 py-5">
-                        <div class="col-lg-8">
-                             <h1 class="mb-4 pb-2">
-              Hi, I’m Ramesh Dahal, <span class="line-highlight">UI/UX</span> and <span class="line-highlight">Frontend Dev</span>
-            </h1>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                                <ul class="pt-4 pt-lg-0 navbar-nav main-nav__list inter-font">
+                                    <li class="main-nav__item"> <a class="nav-link main-nav__link " href="#">Founders</a>
 
-                            <p class="pb-5 lead pe-5">I design and build beautiful websites for businesses around the globe.
-                                If you need a modern and powerful website, send me an <a href="mailto:prncdahal@gmail.com"
-                                class="line-link">email</a>. If we are a good fit, I will give you a time
-                                and cost estimate.</p>
-                            <div class="px-2"><a href="#project-list" class="button1"><span>See my work</span></a>
+                                    </li>
+                                    <li class="main-nav__item"> <a class="nav-link main-nav__link" href="#">Beneficiaries</a>
 
+                                    </li>
+                                    <li class="main-nav__item"> <a class="nav-link main-nav__link" href="#">Scholarships</a>
+
+                                    </li>
+                                    <li class="main-nav__item"> <a class="nav-link main-nav__link" href="#">Press</a>
+
+                                    </li>
+                                    <li class="main-nav__item"> <a class="nav-link main-nav__link" href="#">Blog</a>
+
+                                    </li>
+                                    <li class="main-nav__item"> <a class="nav-link main-nav__link" href="#">Contact</a>
+
+                                    </li>
+                                </ul>
                             </div>
-                        </div>
+                    </div>
+                </nav>
+                <div class="row align-items-end  header__quote__row">
+                    <div class="col-lg-9 mb-4">
+                         <h1 class="text-primary header__lead__text">Ullamcorper diam turpis egestas egestas fames enim risus sed proin</h1>
+
+                    </div>
+                    <div class="col-lg-3 text-lg-end"> <a href="#" class="btn custom-btn">Read More <em class="bi bi-chevron-right custom-btn__icon"></em></a>
+
                     </div>
                 </div>
             </div>
-            <!-- End of billboard -->
+            <div class="text-end ">
+                <img class="header__main_img" src="./img/building.jpg" alt="">
+            </div>
         </header>
-        <section class="project-list py-5" id="project-list">
+        <!-- Header ends here -->
+        <div id="loader"></div>
+        <section class="news-callout block">
             <div class="container">
-                <div class="row align-items-center  py-5">
-                    <div class="col-lg-5 order-lg-1"> <a href="https://flannelflowers.com.hk/" target="_blank" class="media-img mb-5">
-                    <img alt="" src="img/portfolio/flannel flowers.jpg">
-                    <div class="view-link ">
-                         <span class="me-2">See the project</span> <em class="bi bi-arrow-right"></em>
+                 <h4 class="d-block d-lg-none">Latest News</h4>
+                <div class="grid-layout-1 align-items-center">
+                    <div class="grid-layout-1__lg grid-layout-1__item">
+                         <h4 class="d-none d-lg-block">Latest News</h4>
+                        <!-- Media --> <a class="news-media news-media--lg " href="#">
+
+                        <img class="news-media__img" src="./img/stadium-one.jpg" alt="stadium-one">
+
+                        <div class="news-media__date__info">
+
+                            November 19
+
+                            <span class="news-media__line__seperator"></span>
+
+                            2020
+
+                        </div>
+
+                        <h2>Molestie molesti metus, tempus in commodo, semper tellus</h2>
+
+                    </a>
+                        <!-- /.Media ends here --> <a href="#" class="news-media-more-link">See all news <em class="bi bi-chevron-right"></em></a>
                     </div>
+                    <div class="grid-layout-1__md grid-layout-1__item">
+                        <!-- Media --> <a class="news-media" href="#">
+
+                    <img class="news-media__img" src="img/blog-img-1.jpg" alt="stadium-one">
+
+                    <div class="news-media__date__info">
+
+                        November 19
+
+                        <span class="news-media__line__seperator"></span>
+
+                        2020
+
+                    </div>
+
+                    <h3>Molestie molesti metus, tempus in commodo, semper tellus</h3>
+
                 </a>
-
+                        <!-- /.Media ends here -->
                     </div>
-                    <div class="col-lg-7 pe-5 pb-5 order-lg-0 details">
-                         <h6 class="text-uppercase kerning-text text-disabled">latest work</h6>
+                    <div class="grid-layout-1__sm grid-layout-1__item"> <a class="news-media news-media--sm" href="#">
 
-                         <h2 class=" pb-4">Flannel Flowers</h2>
+                <img class="news-media__img" src="./img/blog-media-three.jpg" alt="stadium-one">
 
-                        <div class="content-meta pb-4 mb-1"> <span class="badge bg-secondary me-2">Website design</span>  <span class="badge bg-secondary me-2">Wordpress development</span> 
-                            <span
-                            class="badge bg-secondary me-2">Woocommerce</span><span class="badge bg-secondary">UI/UX Design</span>
+                <div class="news-media__date__info">
 
-                        </div>
-                        <!--/. End of content meta-->
-                        <div class="pb-5">
-                            <p>Website Designed and Developed for Flannel Flowers from Visual Design
-                                to Woocommerce in collaboration with nostalgics. <strong>Objective:</strong> Generate
-                                more sales</p>
-                        </div> <a href="https://flannelflowers.com.hk/" target="_blank" class="button1 ms-2"><span>See this work  <em class="bi bi-arrow-right"></em></span></a>
+                    November 19
 
-                    </div>
-                    <!--End of col-md-6 -->
+                    <span class="news-media__line__seperator"></span>
+
+                    2020
+
                 </div>
-                <!-- End of row-->
-                <div class="row align-items-center  py-5">
-                    <div class="col-lg-5 order-lg-1"> <a href="http://chomolungmaadv.com/" class="media-img mb-5">
-                    <img alt="" src="img/portfolio/chomulung.jpg">
-                    <div class="view-link ">
-                         <span class="me-2">See the project</span> <em class="bi bi-arrow-right"></em>
-                    </div>
-                </a>
+
+                <h6>In faucibus suspendisse magna massa nibh elementum augue phasellus tristique senectus urna</h6>
+
+            </a>
 
                     </div>
-                    <div class="col-lg-7 pe-5 pb-5 order-lg-0 details">
-                         <h6 class="text-uppercase kerning-text text-disabled">latest work</h6>
+                    <div class="grid-layout-1__sm__2 grid-layout-1__item"> <a class="news-media news-media--sm" href="#">
 
-                         <h2 class=" pb-4">Chomolung Adventure</h2>
+                <img class="news-media__img" src="./img/blog-media-four.jpg" alt="stadium-one">
 
-                        <div class="content-meta pb-4 mb-1"> <span class="badge bg-secondary me-2">Website design</span>  <span class="badge bg-secondary me-2">Wordpress </span> 
-                            <span
-                            class="badge bg-secondary">Wp Travel</span> <span class="badge bg-secondary">UI Design</span> 
-                                <span
-                                class="badge bg-secondary">concept</span>
-                        </div>
-                        <!--/. End of content meta-->
-                        <div class="pb-5">
-                            <p>Website Designed and Developed for chomulung from Visual Design to Wordpress. <strong>Objective:</strong> To
-                                get inquires for trip and travels</p>
-                        </div> <a href="http://chomolungmaadv.com/" class="button1 ms-2"><span>See this work  <em class="bi bi-arrow-right"></em></span></a>
+                <div class="news-media__date__info">
 
-                    </div>
-                    <!--End of col-md-6 -->
+                    November 19
+
+                    <span class="news-media__line__seperator"></span>
+
+                    2020
+
                 </div>
-                <!-- End of row-->
-                <div class="row align-items-center  py-5">
-                    <div class="col-lg-5 order-lg-1"> <a href="https://www.prdose.com/" target="_blank" class="media-img mb-5">
-                    <img alt="" src="img/portfolio/Pdose.jpg">
-                    <div class="view-link ">
-                         <span class="me-2">See the project</span> <em class="bi bi-arrow-right"></em>
-                    </div>
-                </a>
 
-                    </div>
-                    <div class="col-lg-7 pe-5 pb-5 order-lg-0 details">
-                         <h6 class="text-uppercase kerning-text text-disabled">latest work</h6>
+                <h6>Feugiat mollis quam sollicitudin egestas adipiscing amet</h6>
 
-                         <h2 class=" pb-4">Prdose</h2>
-
-                        <div class="content-meta pb-4 mb-1"> <span class="badge bg-secondary me-2">Website design</span>  <span class="badge bg-secondary me-2">Wordpress development</span> 
-                            <span
-                            class="badge bg-secondary">concept</span>
-                        </div>
-                        <!--/. End of content meta-->
-                        <div class="pb-5">
-                            <p>Website Designed and Developed for Prdose from Visual Design to Wordpress
-                                CMS. <strong>Objective:</strong> To promote social channels</p>
-                        </div> <a href="https://www.prdose.com/" target="_blank" class="button1 ms-2"><span>See this work  <em class="bi bi-arrow-right"></em></span></a>
-
-                    </div>
-                    <!--End of col-md-6 -->
-                </div>
-                <!-- End of row-->
-            </div>
-        </section>
-        <section class="pb-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                         <h2 class="mb-5  line-highlight">What i do</h2>
-
-                    </div>
-                    <div class="col-lg-5 ">
-                        <div class="mb-5 fadetoText">
-                             <h4 class="mb-3 fw-bold">Design</h4>
-
-                            <p class="">I design beautiful and powerful websites for modern businesses. Any business
-                                today needs a website that wins customers’ trust and helps you do your
-                                business well. I make sure your website is up to that standard.</p>
-                        </div>
-                        <div class="mb-5 fadetoText">
-                             <h4 class="fw-bold mb-3">Development</h4>
-
-                            <p>I build websites in wordpress where I can create responsive, powerful
-                                and fully custom websites. Plus, Wordpress has an incredibly simple Content
-                                Editor for you and your team to edit website content quickly and easily.</p>
-                        </div>
+            </a> 
                     </div>
                 </div>
             </div>
         </section>
-        <footer class=" bg-secondary footer fadetoText p-5 ">
-            <div class="container ">
-                <div class="row pb-5">
-                    <div class="col-lg-7 ">
-                         <h2 class=" line-highlight mb-5">Want to work?</h2>
+        <!-- Media Block -->
+        <section class="media-block media-block--1 mr-60 ">
+            <div class="media-block__inner__wrapper bg-secondary block-md">
+                <div class="container text-light ">
+                    <div class="col-lg-8">
+                         <h4 class="text-uppercase text-light pb-4 ">Our Mission</h4>
 
-                    </div>
-                    <div class="col-lg-5">
-                        <p class="lead">If you need a modern and powerful website for your business, startup or
-                            personally, I am available for work. You can email me directly at <a class="line-highlight sm"
-                            href="mailto:prncdahal@gmail.com">prncdahal@gmail.com</a>
+                         <h2 class="text-light mb-4">Imperdiet quis leo scelerisque nunc magna mattis vitae non non</h2>
 
-                        </p>
+                        <p class="pr-60 col-lg-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation.</p>
                     </div>
                 </div>
-                <div class="copy-right pb-4 small">&copy; 2021. All rights reserved.</div>
+            </div>
+            <img class="media-block__img pr-60" src="img/building2.png" alt="Caption lorem ipsum dolor sit amet">
+        </section>
+        <!-- Media Block Ends here -->
+        <!-- Beneficiaries section -->
+        <div class="block-md bg-light overflow-hidden">
+             <h4 class="container">Beneficiaries</h4>
+
+            <div class="card-slider">
+                <div> <a href="#">
+                <img class="card__img" src="./img/beneficiaries-one.jpg" alt="Caption lorem ipsum dolor sit amet">
+            <h5 class="card-slider__title">Morbi magna turpis dolor adipiscing</h5>
+            </a>
+
+                </div>
+                <div> <a href="#">
+                <img class="card__img" src="./img/beneficiaries-two.jpg" alt="Caption lorem ipsum dolor sit amet">
+            <h5 class="card-slider__title">Morbi magna turpis dolor adipiscing</h5>
+            </a>
+
+                </div>
+                <div> <a href="#">
+                <img class="card__img" src="./img/beneficiaries-three.jpg" alt="Caption lorem ipsum dolor sit amet">
+            <h5 class="card-slider__title">Morbi magna turpis dolor adipiscing</h5>
+            </a>
+
+                </div>
+                <div> <a href="#">
+                <img class="card__img" src="./img/beneficiaries-four.jpg" alt="Caption lorem ipsum dolor sit amet">
+            <h5 class="card-slider__title">Morbi magna turpis dolor adipiscing</h5>
+            </a>
+
+                </div>
+                <div> <a href="#">
+                <img class="card__img" src="./img/beneficiaries-five.jpg" alt="Caption lorem ipsum dolor sit amet">
+            <h5 class="card-slider__title">Morbi magna turpis dolor adipiscing</h5>
+            </a>
+
+                </div>
+                <div> <a href="#">
+                <img class="card__img" src="./img/beneficiaries-one.jpg" alt="Caption lorem ipsum dolor sit amet">
+            <h5 class="card-slider__title">Morbi magna turpis dolor adipiscing</h5>
+            </a>
+
+                </div>
+            </div>
+        </div>
+        <!-- End of Beneficiaries -->
+        <!-- Media Block -->
+        <section class="media-block media-block--2">
+            <div class="media-block__inner__wrapper bg-info block-md">
+                <div class="container text-light ">
+                    <div class="col-lg-8">
+                         <h4 class="text-uppercase text-light pb-4 ">The founders</h4>
+
+                    </div>
+                </div>
+            </div>
+            <div class="media-block__image__wrapper mr-60 ml-60">
+                <img class="media-block__img " src="img/maria-kenter.jpg" alt="Caption lorem ipsum dolor sit amet">
+                <div class="media-block__caption">
+                     <h2 class="media-block__image__title text-light">Maria Kenter <em class="bi bi-chevron-right"></em></h2>
+
+                     <h2 class="media-block__image__title text-light d-none d-md-block">Roger Septimus <em class="bi bi-chevron-right"></em></h2>
+
+                </div>
+            </div>
+            <div class="media-block__image__wrapper mr-60 ml-60  d-md-none">
+                <img class="media-block__img mt-4 w-100" src="img/roger.jpg" alt="Caption lorem ipsum dolor sit amet">
+                <div class="media-block__caption">
+                     <h2 class="media-block__image__title text-light d-lg-none d-md-block">Roger Septimus <em class="bi bi-chevron-right"></em></h2>
+
+                </div>
+            </div>
+        </section>
+        <!-- Media Block Ends here -->
+        <!-- Gallery block -->
+        <section class="block block-sm-top bg-light">
+            <div class="container">
+                <div class="row m-0">
+                    <div class="col-sm-4 px-0">
+                         <h4>Gallery</h4>
+ <a href="#" class="news-media border pb-3">
+                    <img class="w-100" src="./img/gallery1.jpg" alt="Caption lorem ipsum dolor sit amet">
+                    <p class="small inter-font pt-3">Caption lorem ipsum dolor sit amet</p>
+                </a>
+
+                    </div>
+                    <div class="col-sm-4 px-0"> <a href="#" class="news-media pb-3 border">
+                    <img class="w-100" src="./img/gallery2.jpg" alt="Caption lorem ipsum dolor sit amet">
+                    <p class="small inter-font pt-3">Caption lorem ipsum dolor sit amet</p>
+                </a>
+
+                    </div>
+                    <div class="col-sm-4 p-0"> <a href="#" class="news-media pb-3 border">
+                    <img class="w-100" src="./img/gallery3.jpg" alt="Caption lorem ipsum dolor sit amet">
+                    <p class="small inter-font pt-3">Caption lorem ipsum dolor sit amet</p>
+                </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery block ends here -->
+        <footer class="footer  bg-dark">
+            <div class="container block-md">
+                <div class="d-flex justify-content-between">
+                    <div class="footer-logo">
+                        <img src="./img/footer-brand.png" width="100" alt="">
+                    </div>
+                    <div class="social-links text-end d-block d-lg-none "> <a class="px-2 text-light" href="https://www.twitter.com">
+                <em class="bi bi-twitter"></em>
+            </a>
+ <a class="px-2 text-light" href="https://www.twitter.com">
+                <em class="bi bi-linkedin"></em>
+            </a>
+
+                    </div>
+                </div>
+                <div class="footer-middle-row d-lg-flex justify-content-between">
+                    <div class="footer-links inter-font"> <a href="#" title="founders">Founders</a>
+ <a href="#" title="Beneficiaries">Beneficiaries</a>
+
+                        <a
+                        href="#" title="Scholarships">Scholarships</a> <a href="#" title="Press">Press</a>
+ <a href="#" title="Blog">Blog</a>
+
+                            <a
+                            href="#" title="Contact">Contact</a>
+                    </div>
+                    <div class="social-links text-end d-none d-lg-block "> <a class="px-2" href="https://www.twitter.com">
+                <em class="bi bi-twitter"></em>
+            </a>
+ <a class="px-2" href="https://www.twitter.com">
+                <em class="bi bi-linkedin"></em>
+            </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom inter-font pt-lg-5">
+                <div class="container ">
+                    <div class="d-lg-flex align-items-center justify-content-between">
+                        <div class="pb-4"> <a href="#">Privacy Policy</a>
+ <a href="#">Terms & Conditions</a>
+
+                        </div>
+                        <div class="pb-4">&copy; 2021 Company Name. All rights reserved.</div>
+                    </div>
+                </div>
             </div>
         </footer>
         <script src="js/all.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 
 </html>

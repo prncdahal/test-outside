@@ -1,73 +1,80 @@
+
+
 /** Your selected colors **/
-$color1:#FFE872;  
-$color2:#F9EFE7;  
-$color3:#854811;
+$color1:#003A92;  
+$color2:#8C2531;  
+$color3:#D7C3AE;
 $color4:#057876;
 $color5:#6EE4FF;
 $color6:#B7B4B9;
-$color7:#6B6B6B;  // Text Color
-$color8:#222;
+$color7:#3C3C3C;  // Text Color
+$color8:#74788A;
 $color9:#000;  // Heading Color
 
 $theme-colors: (
   "primary":    $color1,
   "secondary":  $color2,
   "success":    $color1,
-  "info":       #0dcaf0,
+  "info":       $color3,
   "warning":    #ECF22E,
   "danger":     red,
   "light":      #fff,
-  "dark":       $color2
+  "dark":       $color7
 );
 
 // Base font
-$font-size-base: 1.2rem;
-$font-weight-base:          300;
+$font-size-base:            1.125rem;
+// $font-weight-base:          400;
+
+
 // Headings
-
-$h1-font-size:               54px;
+$h1-font-size:               64px;
 $h2-font-size:               44px;
-
-$headings-line-height:        1.4;
-// Color Declaration
-$primary:$color1; // Primary Color
-$secondary:$color2; // Secondary Color
-$warning:$color3;   
-
-// Change font family
- $font-family-sans-serif:'Open Sans', sans-serif;
- $headings-font-family: 'Libre Baskerville', serif; 
-
+$h3-font-size:               32px;
+$h4-font-size:               24px;
+// $h4-font-size:               24px;
+$h6-font-size:               16px;
+$headings-line-height:        1.3;
 $headings-color:$color9;
 
+// Color Declaration
+$primary:     $color1; // Primary Color
+$secondary:   $color2; // Secondary Color
+$warning:     $color3;   
+
+// Change font family
+$headings-font-family: 'Galaxie-Copernicus', serif; 
+$font-family-sans-serif:$headings-font-family;
+$inter-font:"Inter";
 
 // Links
-//
 // Style anchor elements.
 
-$link-color:                       $color9;
-
-
-
+$link-color:                       $color8;
 
 // Style anchor elements.
 $link-decoration: none;
 $link-hover-decoration: none;
 
 $enable-negative-margins:     true;
+
 // Navbar
+$navbar-nav-link-padding-x:         1.5rem; 
+$nav-link-padding-y       :         1rem;
+$navbar-light-active-color:         $color1;
+$navbar-light-active-color:         $primary;
+$navbar-light-hover-color:          $primary;
+$navbar-light-color:                $color8;
 
-$navbar-nav-link-padding-x:         1.2rem;
-$navbar-light-active-color:         $color2;
-$navbar-light-active-color:  $primary;
-$navbar-light-hover-color:$primary;
-$navbar-light-color:$color8;
+$navbar-toggler-padding-y:          0;
+$navbar-toggler-padding-x:          0;
 
-
+$navbar-toggler-font-size:          30px;
+$navbar-dark-toggler-border-color: #fff;
+$navbar-light-active-color: transparent;
 // $navbar-brand-font-size:            40px;
 
 // Buttons
-
 // $btn-padding-y-lg:            $input-btn-padding-y-lg !default;
 $btn-padding-x-lg:           1.25rem;
 $btn-font-size-lg:            1.15rem;
@@ -78,18 +85,15 @@ $btn-border-radius:           0;
 
 
 //Body 
-
 $body-color:$color8;
+$body-bg: #F2EFEE;
 $yiq-text-dark:   #ffff; // Changing  btn color
 
+
 // Badges
-
-
 $badge-color:                       $color8;
 
 
-// Components
-//
 // Define common padding and border radius sizes and more.
 
 // $border-radius:               0;
