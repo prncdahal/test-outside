@@ -1,0 +1,87 @@
+// Project list
+
+.project-list{
+
+
+    .media-img{
+        position: relative;
+        display: block;
+        background: url(/img/dot-pattern.png) no-repeat 0px 100%;
+        background-size: 100px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        @media (min-width: 576px) {
+            padding-left: 30px;
+            padding-bottom: 30px;
+         }
+
+
+        .view-link{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: right;
+            padding-right: 30px;
+            opacity: 0;
+            font-size: 16px;
+            transition: all 200ms ease-in;
+            span,em{
+                transform: translateX(-10px);
+                display: inline-block;
+                transition: all 200ms ease-in;
+            }
+            em{
+                transition-duration: 300ms;
+                transform: translateX(-20px);
+                font-size: 1.5rem;
+            }
+            &:hover{
+                color: $primary;
+            }
+          
+        }
+        &:hover{
+            transform: translate(10px, -10px);
+
+            .view-link{
+                opacity: 1;
+               
+                span,em{
+                    transform: translateX(0);
+                    color: $color6;
+
+                }
+
+            }
+
+        }
+    }
+    .details{
+        transition: all 300ms linear;
+    }
+}
+
+
+
+// header-inner
+.header-inner{
+    min-height: 55vh;
+}
+.mt-n7{
+    margin-top: -4rem;
+}
+
+//
+.decor__circle {
+    border: 2px solid darken($secondary,10%);
+    border-radius: 100%;
+    width: 25vw;
+    height: 25vw;
+    position: absolute;
+    top: 5vh;
+    right: 10vw;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+
