@@ -1,0 +1,16 @@
+@import "./custom-variable.scss";
+@import "./frameworks/bootstrap/bootstrap.scss";
+@import "node_modules/bootstrap-icons/font/bootstrap-icons";
+@import "node_modules/slick-carousel/slick/slick.scss";
+@import "./components/header"; 
+@import "./components/helper.scss"; 
+@import "./components/footer"; 
+@import "./components/custom.scss";
+
+body{
+
+    letter-spacing: 0.5px;
+}
+
+
+//btns

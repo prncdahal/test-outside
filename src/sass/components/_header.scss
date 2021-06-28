@@ -1,0 +1,86 @@
+.header{
+
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    opacity: 0;
+    .logo{
+        font-weight: 900;
+        font-size: 40px;
+        font-family: 'Mulish', sans-serif;
+    }
+    nav{
+       li{
+           &:last-child{
+               a{
+                   margin-right: 0;
+               }
+           }
+        a{
+           
+            margin:0 1.2rem;
+            &:hover{
+                &:after{
+                    height: 100%;
+                }
+            }
+            &:after{
+                bottom: 0;
+                height: 30%;
+                width: 100%;
+                transition: height 100ms linear;
+
+            }
+        }
+       }
+    }
+    .bg-overlay{
+        position: absolute;
+        left:0;
+        height: 100%;
+        width: 0;
+       z-index: -1;
+        top: 0;
+        // background-color: #fafafa;
+        background-color: $secondary;
+    }
+
+}
+
+
+// Buttons
+.button1{
+    display: inline-block;
+    position: relative;
+   span{
+    background-color: #000;
+    min-width: 200px;
+    height: 60px;
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px 30px;
+    line-height: 20px;
+    transform: translate(-10px, -10px);
+    transition: all 200ms ease-in-out;
+   }
+    
+    &:after{
+        content: "";
+        position: absolute;
+        height: 60px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border: 2px solid #000;
+    }
+    &:hover{
+        span{
+            transform: translate(0);
+        }
+    }
+  
+}

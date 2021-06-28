@@ -1,2 +1,1 @@
 # test-outside
-test-outside
